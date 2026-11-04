@@ -154,3 +154,8 @@ html[data-theme="dark"] .hero-art .hero-dark{border-color:color-mix(in srgb,var(
 .project-wip-visual{background:color-mix(in srgb,var(--accent) 8%,var(--glass));color:var(--accent)}.project-wip-visual>svg{margin-top:8px}.project-status{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:4px 10px;border:1px solid var(--line);border-radius:20px;background:var(--glass);color:var(--ink);font-size:8px;font-weight:700;letter-spacing:1px}
 
 .project-visual .hack-thumbnail{object-fit:cover;object-position:center 38%}.hack-workflow{padding-left:22px;color:var(--muted);font-size:12px;line-height:1.9}.hack-workflow li+li{margin-top:10px}#detail-content .hack-workflow+p a{text-decoration:underline}
+
+/* Reserve room for the hero frame instead of letting it paint over the copy. */
+.hero-inner{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);column-gap:56px;row-gap:40px}.hero-art{width:calc(100% - 32px);margin:0 auto}.hero-copy>p{max-width:100%}
+@media(max-width:950px){.hero-inner{grid-template-columns:minmax(0,1fr);gap:40px}.hero-copy{width:100%;max-width:680px}.hero-art{max-width:400px;margin:0 auto 12px}.hero-copy>p{max-width:600px}}
+@media(max-width:700px){.hero-inner{gap:32px}.hero-art{max-width:340px}.hero-copy>p{max-width:100%}}
