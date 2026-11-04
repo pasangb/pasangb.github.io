@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Hiking journal illustration</title>
+  <desc id="desc">An illustrated mountain landscape used as a placeholder until personal hiking photographs are added.</desc>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e8e9f6"/><stop offset="1" stop-color="#f4efe5"/></linearGradient></defs>
+  <path fill="url(#sky)" d="M0 0h800v500H0z"/>
+  <circle cx="625" cy="115" r="42" fill="#faf4d7" stroke="#dbc68e"/>
+  <path d="m0 325 150-164 115 140 115-190 172 233 111-161 137 142v175H0" fill="#c2cdd4"/>
+  <path d="m0 412 191-188 140 181 143-133 150 131 92-89 84 91v95H0" fill="#9db6b2"/>
+  <path d="M0 435q137-71 290-10t510-13v88H0" fill="#7f9f96"/>
+  <path d="M420 500q150-53 71-75t-48-52" fill="none" stroke="#e9e0c8" stroke-width="13"/>
+  <g fill="#d2b675"><path d="m185 67 3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><circle cx="365" cy="65" r="2"/><circle cx="525" cy="173" r="2"/></g>
+</svg>
