@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;450;500;600;650;700;800&display=swap" rel="stylesheet">
   <script src="js/theme-init.js"></script>
-  <link rel="stylesheet" href="css/styles.css?v=25">
+  <link rel="stylesheet" href="css/styles.css?v=26">
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
@@ -53,7 +53,7 @@
 
   <section id="profile" class="shell profile" aria-labelledby="profile-title">
     <div><span class="eyebrow">01 / The traveler behind the toolkit</span><h2 id="profile-title">Curiosity is my<br>favorite starting point.</h2></div>
-    <div><p>I'm pursuing a B.S. in Electrical and Computer Engineering at New York University, graduating in May 2028, with a 3.7 GPA. I'm interested in hardware engineering and want to learn more about chip design, digital logic, and how hardware is described and verified.</p><p>I'm getting into low-level programming and hardware description languages such as SystemVerilog. My learning experiments help me connect code with digital hardware behavior. Alongside that, I've built a solar-powered vehicle, a posture monitor, and power electronics for ARC Robotics VIP, and I help students troubleshoot as an engineering teaching assistant.</p><p>Away from the workbench, I enjoy hiking, taking photographs, and exploring new places. I bring that same curiosity to engineering: trying things, asking questions, and learning along the way.</p><div class="profile-tags"><span class="pill">⌘ NYU · ECE · Class of 2028</span><span class="pill">⌖ NYC wanderer</span><span class="pill">✧ HDL learner</span></div></div>
+    <div><p>I'm pursuing a B.S. in Electrical and Computer Engineering at New York University, graduating in May 2028, with a 3.7 GPA. I'm interested in hardware engineering and want to learn more about chip design, digital logic, and how hardware is described and verified.</p><p>I'm getting into low-level programming and hardware description languages such as SystemVerilog. My learning experiments help me connect code with digital hardware behavior. Alongside that, I've built a solar-powered vehicle, a posture monitor, and power electronics for ARC Robotics VIP, and I help students troubleshoot as an engineering teaching assistant.</p><p>Away from the workbench, I enjoy hiking, taking photographs, and exploring new places. I bring that same curiosity to engineering: trying things, asking questions, and learning along the way.</p><div class="profile-actions"><button type="button" class="btn btn-primary" id="view-resume" aria-haspopup="dialog" aria-controls="resume-modal">View Resume <span aria-hidden="true">&#8599;</span></button></div><div class="profile-tags"><span class="pill">⌘ NYU · ECE · Class of 2028</span><span class="pill">⌖ NYC wanderer</span><span class="pill">✧ HDL learner</span></div></div>
   </section>
   <div class="shell"><div class="divider"></div></div>
 
@@ -134,6 +134,11 @@
 </main>
 <footer class="site-footer"><div class="shell footer-inner"><span class="footer-brand"><span class="footer-star">✧</span> MY ENGINEERING JOURNAL</span><span>© <span id="year">2026</span> Pasang Bhote · Learning engineering, one project at a time.</span><a href="#">Back to top ↑</a></div></footer>
 <dialog id="expedition-modal" aria-labelledby="modal-title"><div class="expedition-toolbar"><button class="modal-close" aria-label="Close expedition detail"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div><img class="modal-image" id="modal-image" alt=""><div class="photo-slider-controls" id="photo-slider-controls" role="group" aria-label="Boudha photo slider" hidden><div class="photo-slider-nav"><button type="button" id="photo-slide-prev" aria-label="Previous photo">←</button><div id="photo-slide-dots" class="photo-slide-dots"></div><button type="button" id="photo-slide-next" aria-label="Next photo">→</button></div><p id="photo-slide-caption" aria-live="polite"></p></div><div class="modal-content"><span class="eyebrow">An expedition field note</span><h2 id="modal-title"></h2><div class="modal-badges"><span class="pill" id="modal-location"></span><span class="pill" id="modal-date"></span><span class="pill" id="modal-category"></span></div><p id="modal-story" class="modal-story"></p><div class="modal-spec" id="modal-spec"></div><a id="modal-source" class="modal-source" target="_blank" rel="noopener noreferrer">View full-resolution photograph ↗</a><div id="modal-gallery" class="expedition-gallery" hidden></div></div></dialog>
+<dialog id="resume-modal" class="resume-modal" aria-labelledby="resume-title">
+  <div class="detail-toolbar"><h2 id="resume-title">My Resume</h2><button type="button" class="detail-close" id="close-resume" aria-label="Close resume"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+  <div class="resume-content"><div class="resume-links"><a class="btn" href="assets/pasang-bhote-resume.pdf" download="Pasang-Bhote-Resume.pdf">Download PDF &#8595;</a><a class="btn" href="assets/pasang-bhote-resume.pdf" target="_blank" rel="noopener noreferrer">Open in new tab &#8599;</a></div><p class="resume-note">If the PDF preview is unavailable on your device, open it in a new tab or download it above.</p><iframe id="resume-viewer" title="Pasang Bhote's professional resume" data-src="assets/pasang-bhote-resume.pdf#view=FitH"></iframe></div>
+</dialog>
+
 <dialog id="detail-modal" aria-labelledby="detail-title">
   <div class="detail-toolbar"><span class="eyebrow" id="detail-eyebrow">The quest, in detail</span><button type="button" class="detail-close" aria-label="Close details" autofocus><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
   <div class="detail-inner"><h2 id="detail-title"></h2><div id="detail-content"></div><div class="detail-bottom"><span class="star" aria-hidden="true">✦</span><a href="#contact" class="btn detail-contact">Let's chat about it ↗</a></div></div>
@@ -226,5 +231,6 @@
 </template>
 <script src="js/main.js?v=17"></script>
 <script src="js/details.js?v=8"></script>
+<script src="js/resume.js?v=1"></script>
 </body>
 </html>
